@@ -1,0 +1,120 @@
+/* ======DRY - dont repeat yourself ========*/
+@import "fonts.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e2e7ec;
+  font-family: 'Neue Hans Kendrick Regular';
+  letter-spacing: 1px;
+}
+.content__title,
+.text__title,
+.text__date,
+.content__date {
+  text-transform: uppercase;
+}
+
+.content__title {
+  max-width: 380px;
+}
+.main {
+  height: 85%;
+  width: 70%;
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+  /* box-shadow: 1px 1px 10px rgba(100, 150, 120, 0.6); */
+}
+
+/* .section,
+.section__content,
+.content__text {
+    display: flex;
+    flex-direction: column;
+} */
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .content { */
+/* border: 2px solid black; */
+/* } */
+
+.section__block {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 10px 10px;
+}
+/* .section__block:nth-child(2) {
+  background: green; */
+/* } */
+
+.section__content {
+  /* width: calc(33.2% - 10px); */
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 33.3333333333333333333%;
+  /* flex-basis: 31%; */
+  /* flex-grow: 1; */
+}
+.section__content_big {
+  /* flex-grow: 2; */
+  /* flex-basis: 65%; */
+  width: 68%;
+  background-image: url(../img/car_1.jpg);
+  background-size: cover;
+  /* width:75%; */
+  color: #fff;
+  padding: 40px;
+}
+.text__date {
+  color: #818181;
+}
+
+.content__text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 27px;
+  justify-content: space-between;
+}
+.text__date {
+  margin-bottom: 10px;
+}
+.text__img {
+  width: 55px;
+}
+
+.text__title {
+  flex-grow: 1;
+  font-size: 22px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+
+
+.section__content:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+/* align self */
+
