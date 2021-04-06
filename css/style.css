@@ -105,16 +105,26 @@ body {
 
 
 .section__content:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transition: all 0.4s linear;
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
   -ms-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
+  cursor: pointer;
 }
+
+.section__content:not(hover) {
+  transition: all .8s;
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -ms-transition: all .8s;
+  -o-transition: all .8s;
+}
+
 /* align self */
 
